@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    
+</head>
+<html>
+    <body>
+        
+        <script>
+            
+            //*******************************************
+            
+            //  WATCH VIDIO # 7 AGAIN, THIS CODE IS NOT COMPLETE
+            //*******************************************
+
+
+            /*
+             
+             DOM elements  <  data elements     (enter)
+             DOM elements  >  data elements     (exit)
+             DOm elemts    =  data elements     (update)
+             
+             */
+        
+        var data = [10];
+        
+        var canvas = d3.select("body")
+                    .append("svg")
+                    .attr("width", 500)
+                    .attr("height", 500);
+                    
+                    
+        var circle =  canvas.selectAll("circle")
+                        .data(data)
+                        .enter()
+                            .append("circle")
+                            .attr("cx", 50)
+                            .attr("cy", 50)
+                            .attr("r", 25);
+                    
+      
+            
+        </script>
+        
+        
+    </body>
+</html>
